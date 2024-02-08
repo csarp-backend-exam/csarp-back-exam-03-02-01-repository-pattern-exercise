@@ -3,37 +3,23 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Kreta.Backend.Repos
 {
-    public class StudentInMemoryRepo : StudentRepo<KretaInMemoryContext>
+    public class StudentInMemoryRepo 
     {
-        public StudentInMemoryRepo(IDbContextFactory<KretaInMemoryContext> dbContextFactory) : base(dbContextFactory)
-        {
-        }
+        
     }
-    public class GradeInMemoryRepo : GradeRepo<KretaInMemoryContext>
+    public class GradeInMemoryRepo
     {
-        public GradeInMemoryRepo(IDbContextFactory<KretaInMemoryContext> dbContextFactory) : base(dbContextFactory)
-        {
-        }
     }
 
-    public class ParentInMemoryRepo : ParentRepo<KretaInMemoryContext>
+    public class ParentInMemoryRepo
     {
-        public ParentInMemoryRepo(IDbContextFactory<KretaInMemoryContext> dbContextFactory) : base(dbContextFactory)
-        {
-        }
     }
 
-    public class SubjectInMemoryRepo : SubjectRepo<KretaInMemoryContext>
+    public class SubjectInMemoryRepo
     {
-        public SubjectInMemoryRepo(IDbContextFactory<KretaInMemoryContext> dbContextFactory) : base(dbContextFactory)
-        {
-        }
     }
 
-    public class TeacherInMemoryRepo : TeacherRepo<KretaInMemoryContext>
+    public class TeacherInMemoryRepo
     {
-        public TeacherInMemoryRepo(IDbContextFactory<KretaInMemoryContext> dbContextFactory) : base(dbContextFactory)
-        {
-        }
     }
 }
